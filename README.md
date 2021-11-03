@@ -1,6 +1,7 @@
 # CIR-Bayesian-Estimation
 
-The following code implements the CIR (Cox, Ingersoll and Ross, 1985) stochastic interest rate model in Python.
+The following code implements the CIR (Cox, Ingersoll and Ross, 1985) stochastic interest rate model and 
+bond prices in Python.
 
 The process involves finding the full conditional psoterior distribution of model parameters in closed form.
 The Gibb Sampler algorithm is used to draw samples from the conditional posterior distribution.
