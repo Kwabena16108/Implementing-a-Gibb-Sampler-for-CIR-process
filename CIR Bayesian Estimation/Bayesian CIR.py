@@ -6,15 +6,6 @@ Created on Wed Nov  3 15:45:43 2021
 @author: dicksonnkwantabisa
 """
 
-'''
-The following code implements the CIR (Cox, Ingersoll and Ross, 1985) stochastic interest rate model in Python.
-
-The process involves finding the full conditional psoterior distribution of model parameters in closed form. 
-Readers can refer to https://digitalcommons.sacredheart.edu/wcob_theses/22/ for my dissertation paper title 
-"A Bayesian Approach to Assessing the Risk Premium on Catastrophe Bond Derivatives at Issuance"
-
-for a full derivation of the formulas used in the code.
-'''
 
 import numpy as np
 import pandas as pd
@@ -53,7 +44,7 @@ sig2=truncnorm(a=-1/s,b=math.inf,loc=sig2,scale=s*sig2).rvs(); sig2
 alpha0=truncnorm(a=-1/s,b=math.inf,loc=alpha,scale=s*alpha).rvs(); alpha0
 beta0=truncnorm(a=-1/s,b=math.inf,loc=beta,scale=s*beta).rvs() ; beta0 
 
-alpha0=0.5; beta0=0.2; sig2_0=0.1;
+# alpha0=0.5; beta0=0.2; sig2_0=0.1;
 print("Augmenting data with parameters: alpha = ",alpha0," beta = ",beta0," sigma2 = ",sig2_0)
 
 random.seed(123)
