@@ -1,4 +1,4 @@
-# CIR-Bayesian-Estimation
+# Implementation of a Gibb-Sampler for CIR process
 
 The following code implements the CIR (Cox, Ingersoll and Ross, 1985) stochastic interest rate model via a Gibb Sampler 
 algorithm and simulate bond prices in Python.
